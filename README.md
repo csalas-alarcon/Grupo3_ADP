@@ -27,13 +27,13 @@
 ## Apartados
 
 1. - [X] Temática y Preguntas
-2. - [ ] Obtención de Datos
-3. - [ ] Diseño Conceptual, Lógico y Físico
-4. - [ ] Extracción y Preparación de Datos (pentaho)
-5. - [ ] Transformación de Datos (tripletas)
-6. - [ ] Visualizaciones
+2. - [X] Obtención de Datos
+3. - [X] Diseño Conceptual, Lógico y Físico
+4. - [X] Extracción y Preparación de Datos (pentaho)
+5. - [X] Transformación de Datos (tripletas)
+6. - [X] Visualizaciones
 7. - [ ] Memoria del Trabajo
-8. - [ ] Repositorio GitHub
+8. - [X] Repositorio GitHub
 
 ### Revisiones
 
@@ -43,13 +43,13 @@ Las casillas **marcadas** con una *X* indican que ese miembro del equipo le ha d
 | Apartado | Salas | David | Linxi | Stefano |
 |:-:|:---:|:---:|:---:|:---:|
 | 1 | (X) | (X) | (X) | (X) |
-| 2 | (X) | ( ) | (X) | (X) |
-| 3 | (X) | ( ) | (X) | (X) |
-| 4 | (X) | ( ) | (X) | (X) |
-| 5 | ( ) | ( ) | ( ) | (X) |
-| 6 | (X) | ( ) | (X) | (X) |
+| 2 | (X) | (X) | (X) | (X) |
+| 3 | (X) | (X) | (X) | (X) |
+| 4 | (X) | (X) | (X) | (X) |
+| 5 | (X) | (X) | (X) | (X) |
+| 6 | (X) | (X) | (X) | (X) |
 | 7 | ( ) | ( ) | ( ) | ( ) |
-| 8 | ( ) | ( ) | ( ) | (X) |
+| 8 | (X) | (X) | (X) | (X) |
 
 ## Estructura del Repositorio
 
@@ -461,6 +461,6 @@ Además de este mismo README.md se incluye una memoria del trabajo en la carpeta
 
 ## Last Edited
 
+- 18/12/25 - Carlos
 - 14/12/25 - Stefano
 - 10/12/25 - Linxi
-- 10/12/25 - Carlos
