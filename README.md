@@ -9,6 +9,7 @@
 - [Equipo](#equipo)
 - [Apartados](#apartados)
 - [Estructura del Repositorio](#estructura-del-repositorio)
+
 1. [Temática y Preguntas](#temática-y-preguntas)
 2. [Obtención de Datos Relevantes](#obtención-de-datos-relevantes)
 3. [Almacén de Datos](#almacén-de-datos)
@@ -32,7 +33,7 @@
 4. - [X] Extracción y Preparación de Datos (pentaho)
 5. - [X] Transformación de Datos (tripletas)
 6. - [X] Visualizaciones
-7. - [ ] Memoria del Trabajo
+7. - [X] Memoria del Trabajo
 8. - [X] Repositorio GitHub
 
 ### Revisiones
@@ -41,58 +42,65 @@ Aquí tenemos indicadas las revisiones realizadas para cada apartado por cada mi
 Las casillas **marcadas** con una *X* indican que ese miembro del equipo le ha dado su **visto bueno** a ese apartado.
 
 | Apartado | Salas | David | Linxi | Stefano |
-|:-:|:---:|:---:|:---:|:---:|
-| 1 | (X) | (X) | (X) | (X) |
-| 2 | (X) | (X) | (X) | (X) |
-| 3 | (X) | (X) | (X) | (X) |
-| 4 | (X) | (X) | (X) | (X) |
-| 5 | (X) | (X) | (X) | (X) |
-| 6 | (X) | (X) | (X) | (X) |
-| 7 | ( ) | ( ) | ( ) | ( ) |
-| 8 | (X) | (X) | (X) | (X) |
+| :------: | :---: | :---: | :---: | :-----: |
+|    1    |  (X)  |  (X)  |  (X)  |   (X)   |
+|    2    |  (X)  |  (X)  |  (X)  |   (X)   |
+|    3    |  (X)  |  (X)  |  (X)  |   (X)   |
+|    4    |  (X)  |  (X)  |  (X)  |   (X)   |
+|    5    |  (X)  |  (X)  |  (X)  |   (X)   |
+|    6    |  (X)  |  (X)  |  (X)  |   (X)   |
+|    7    |  ( )  |  (X)  |  ( )  |   ( )   |
+|    8    |  (X)  |  (X)  |  (X)  |   (X)   |
 
 ## Estructura del Repositorio
 
 - ./**data**: Datos obtenidos
-    - /**pollution**: Datos de sensores de contaminación del aire por CCAA
-    - /*gini_ccaa.csv*: Índice de desigualdad GINI por CCAA
-    - /*ipc_ccaa.csv*: Índice de Precios de Consumo por CCAA
-    - /*pibc_ccaa.csv*: Producto Interior Bruto per cápita por CCAA
-    - /*pob_ccaa.csv*: Cantidad de población por CCAA
-    - /*pob_ccaa_ex.csv*: Cantidad de población por CCAA con menos años
-    - /*qol_ccaa.xslx*: Índice de calidad de vida por CCAA
-    - /*qol_ccaa_ex.xslx*: Índice de calidad de vida por CCAA con datos extra
+
+  - /**pollution**: Datos de sensores de contaminación del aire por CCAA
+  - /*gini_ccaa.csv*: Índice de desigualdad GINI por CCAA
+  - /*ipc_ccaa.csv*: Índice de Precios de Consumo por CCAA
+  - /*pibc_ccaa.csv*: Producto Interior Bruto per cápita por CCAA
+  - /*pob_ccaa.csv*: Cantidad de población por CCAA
+  - /*pob_ccaa_ex.csv*: Cantidad de población por CCAA con menos años
+  - /*qol_ccaa.xslx*: Índice de calidad de vida por CCAA
+  - /*qol_ccaa_ex.xslx*: Índice de calidad de vida por CCAA con datos extra
 - ./**design**: Diseños del almacén de datos
-    - /*conceptual.md*: Diseño conceptual
-    - /*logic.png*: Diseño lógico
-    - /*logic.mwb*: Diseño lógico (modelo de MySQL Workbench)
-    - /*physic.sql*: Diseño físico
+
+  - /*conceptual.md*: Diseño conceptual
+  - /*logic.png*: Diseño lógico
+  - /*logic.mwb*: Diseño lógico (modelo de MySQL Workbench)
+  - /*physic.sql*: Diseño físico
 - ./**dist**: Distintos ficheros y datos finales
-    - /**kettle**: Agregados generados por las transformaciones de Pentaho y Python
-    - /**web**: Directorio con la página web generada (autocontenido)
-    - /*data.csv*: Agregado de datos final
+
+  - /**kettle**: Agregados generados por las transformaciones de Pentaho y Python
+  - /**web**: Directorio con la página web generada (autocontenido)
+  - /*data.csv*: Agregado de datos final
 - ./**docs**: Documentación del trabajo
-    - /*Presentation.pdf*: Presentación del trabajo
-    - /*Memoria.pdf*: Memoria del trabajo
-    - /*Memoria.odt*: Memoria del trabajo
+
+  - /*Presentation.pdf*: Presentación del trabajo
+  - /*Memoria.pdf*: Memoria del trabajo
+  - /*Memoria.odt*: Memoria del trabajo
 - ./**kettle**: Trabajos y transformaciones
-    - /**pollution**: Trabajos y transformaciones de pollution hechos en Python
-    - /**steps**: Transformaciones de Pentaho para cada uno de los CSV de entrada
-    - /*agg_all.ktr*: Transformación de Pentaho para agregar todos los CSV limpios en uno final
-    - /*data.kjb*: Trabajo de Pentaho que orquesta todo el proceso de limpieza, transformación y agregación de datos
+
+  - /**pollution**: Trabajos y transformaciones de pollution hechos en Python
+  - /**steps**: Transformaciones de Pentaho para cada uno de los CSV de entrada
+  - /*agg_all.ktr*: Transformación de Pentaho para agregar todos los CSV limpios en uno final
+  - /*data.kjb*: Trabajo de Pentaho que orquesta todo el proceso de limpieza, transformación y agregación de datos
 - ./**pdi** Contiene una copia de [Pentaho Data Integration](https://pentaho.com/products/pentaho-data-integration/)
 - ./**schema**: Definiciones RDF
-    - /**code**: Código para generar las definiciones RDF
-    - /*.ttl*: Definiciones RDF para cada categoría
-- ./**visuals**: Visualizaciones de datos
-    - /**extended**: Visualizaciones interactivas generadas con datos enriquecidos con Wikidata
-    - /**code**: Código para generar las visualizaciones
-    - /*.png*: Visualizaciones
-- ./**web**: Generación de página web para las visualizaciones
-    - /*build.sh*: Script encargado de generar la página web
-    - /*style.css*: Hoja de estilos de la página web
-    - /*.html*: Snippets de HTML que forman la página web
 
+  - /**code**: Código para generar las definiciones RDF
+  - /*.ttl*: Definiciones RDF para cada categoría
+- ./**visuals**: Visualizaciones de datos
+
+  - /**extended**: Visualizaciones interactivas generadas con datos enriquecidos con Wikidata
+  - /**code**: Código para generar las visualizaciones
+  - /*.png*: Visualizaciones
+- ./**web**: Generación de página web para las visualizaciones
+
+  - /*build.sh*: Script encargado de generar la página web
+  - /*style.css*: Hoja de estilos de la página web
+  - /*.html*: Snippets de HTML que forman la página web
 - *start.sh*: Script para ejecutar las transformaciones, generar las tripletas, generar las visualizaciones y generar la página web de las visualizaciones
 
 > [!IMPORTANT]
@@ -105,25 +113,25 @@ Las casillas **marcadas** con una *X* indican que ese miembro del equipo le ha d
 
 - **Temática**: Calidad de Vida (*QOL*)
 - **Lienzo del problema**:
-    - *Who*: Los habitantes de las CCAA estudiadas y sus respectivas administraciones públicas.
-    - *What*: Determinar la influencia estadística real de factores económicos, sociales y ambientales en la Calidad de Vida.
-    - *Where*: En las diferentes CCAA de España durante los últimos 12 años aproximadamente.
-    - *Why*: Optimizar la toma de decisiones identificando qué variables afectan más a la calidad de vida real.
+  - *Who*: Los habitantes de las CCAA estudiadas y sus respectivas administraciones públicas.
+  - *What*: Determinar la influencia estadística real de factores económicos, sociales y ambientales en la Calidad de Vida.
+  - *Where*: En las diferentes CCAA de España durante los últimos 12 años aproximadamente.
+  - *Why*: Optimizar la toma de decisiones identificando qué variables afectan más a la calidad de vida real.
 - **Objetivos**:
-    - Cuantificar la correlación y la magnitud del impacto de las variables macroeconómicas (PIB, IPC), sociales (GINI) y ambientales (Contaminación) sobre el Índice de Calidad de Vida (QOL).
+  - Cuantificar la correlación y la magnitud del impacto de las variables macroeconómicas (PIB, IPC), sociales (GINI) y ambientales (Contaminación) sobre el Índice de Calidad de Vida (QOL).
 - **Casos de uso**:
-    - Soporte a la decisión en políticas públicas: Sirve de diagnóstico para administraciones ya que permite priorizar las inversiones y maximizar así el impacto de las mismas.
-    - Benchmarking competitivo entre CCAA: Sirve como análisis comparativo para evaluar la evolución relativa de una CCAA frente a las demás. Esto permite evaluar la gestión de cada CCAA respecto al resto y así copiar las estrategias que hayan tenido más éxito y descartar las que hayan tenido menos.
+  - Soporte a la decisión en políticas públicas: Sirve de diagnóstico para administraciones ya que permite priorizar las inversiones y maximizar así el impacto de las mismas.
+  - Benchmarking competitivo entre CCAA: Sirve como análisis comparativo para evaluar la evolución relativa de una CCAA frente a las demás. Esto permite evaluar la gestión de cada CCAA respecto al resto y así copiar las estrategias que hayan tenido más éxito y descartar las que hayan tenido menos.
 - **Métricas Clave**:
-    - *QOL*: Índice de Calidad de Vida -> Sobre lo que se va a realizar el estudio.
-    - *PIB y IPC*: Variables macroeconómicas -> Sobre lo que se va a medir el impacto.
-    - *GINI*: Índice de Desigualdad -> Sobre lo que se va a medir el impacto.
-    - *Contaminación*: Índice de toxicidad acumulada en el aire -> Sobre lo que se va a medir el impacto.
-    - *Poblaciones*: Cantidad de habitantes -> No es una métrica clave pero es bastante relevante y también se puede medir su impacto.
+  - *QOL*: Índice de Calidad de Vida -> Sobre lo que se va a realizar el estudio.
+  - *PIB y IPC*: Variables macroeconómicas -> Sobre lo que se va a medir el impacto.
+  - *GINI*: Índice de Desigualdad -> Sobre lo que se va a medir el impacto.
+  - *Contaminación*: Índice de toxicidad acumulada en el aire -> Sobre lo que se va a medir el impacto.
+  - *Poblaciones*: Cantidad de habitantes -> No es una métrica clave pero es bastante relevante y también se puede medir su impacto.
 - **Preguntas**:
-    - ¿Cómo influye la economía de una CCAA en la calidad de vida de sus habitantes?
-    - ¿Cómo influyen el turismo y la contaminación de una CCAA en la calidad de vida de sus habitantes?
-    - ¿Influye más la economía de la CCAA o su turismo y contaminación en la calidad de vida de sus habitantes?
+  - ¿Cómo influye la economía de una CCAA en la calidad de vida de sus habitantes?
+  - ¿Cómo influyen el turismo y la contaminación de una CCAA en la calidad de vida de sus habitantes?
+  - ¿Influye más la economía de la CCAA o su turismo y contaminación en la calidad de vida de sus habitantes?
 
 ## Obtención de Datos Relevantes
 
@@ -132,15 +140,14 @@ Los datos tienen que tener la información por **Año**, sobre todo a poder ser 
 
 ### Datos Obtenidos:
 
-| Descripción | Archivo(s) | Tipo | Fuente |
-|:-----------:|:----------:|:----:|:------:|
-| Índice de calidad de vida | *qol_ccaa.xslx* | Excel | [INE](https://www.ine.es/) |
-| Producto interior bruto | *pibc_ccaa.csv* | CSV | [INE](https://www.ine.es/) |
-| Índice de precios de consumo | *ipc_ccaa.csv* | CSV | [INE](https://www.ine.es/) |
-| Índice de desigualdad económica GINI | *gini_ccaa.csv* | CSV | [INE](https://www.ine.es/) |
-| Cantidad de población | *pob_ccaa.csv* | CSV | [INE](https://www.ine.es/) |
-| Contaminación del aire | *pollution/* | CSVs | [AQICN](https://aqicn.org/historical), [Sensor Community](https://archive.sensor.community/), [Junta Extremadura](http://extremambiente.juntaex.es/files/Calidad%20y%20Evaluacion/2023/Informe_anual_CA_2021.pdf), [ENVIRA](https://www.melilla.es/melillaportal/RecursosWeb/DOCUMENTOS/1/2_25536_1.pdf) y [Ecologistas en Acción](https://www.ecologistasenaccion.org/wp-content/uploads/2022/06/informe-calidad-aire-2021.pdf) |
-
+|              Descripción              |    Archivo(s)    | Tipo |                                                                                                                                                                                                       Fuente                                                                                                                                                                                                       |
+| :------------------------------------: | :---------------: | :---: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       Índice de calidad de vida       | *qol_ccaa.xslx* | Excel |                                                                                                                                                                                              [INE](https://www.ine.es/)                                                                                                                                                                                              |
+|        Producto interior bruto        | *pibc_ccaa.csv* |  CSV  |                                                                                                                                                                                              [INE](https://www.ine.es/)                                                                                                                                                                                              |
+|     Índice de precios de consumo     | *ipc_ccaa.csv* |  CSV  |                                                                                                                                                                                              [INE](https://www.ine.es/)                                                                                                                                                                                              |
+| Índice de desigualdad económica GINI | *gini_ccaa.csv* |  CSV  |                                                                                                                                                                                              [INE](https://www.ine.es/)                                                                                                                                                                                              |
+|         Cantidad de población         | *pob_ccaa.csv* |  CSV  |                                                                                                                                                                                              [INE](https://www.ine.es/)                                                                                                                                                                                              |
+|        Contaminación del aire        |  *pollution/*  | CSVs | [AQICN](https://aqicn.org/historical), [Sensor Community](https://archive.sensor.community/), [Junta Extremadura](http://extremambiente.juntaex.es/files/Calidad%20y%20Evaluacion/2023/Informe_anual_CA_2021.pdf), [ENVIRA](https://www.melilla.es/melillaportal/RecursosWeb/DOCUMENTOS/1/2_25536_1.pdf) y [Ecologistas en Acción](https://www.ecologistasenaccion.org/wp-content/uploads/2022/06/informe-calidad-aire-2021.pdf) |
 
 > [!NOTE]
 > Todos los datos se encuentran en la carpeta *./data*.
@@ -150,9 +157,9 @@ Los datos tienen que tener la información por **Año**, sobre todo a poder ser 
 Las fuentes utilizadas han sido:
 
 - **Instituto Nacional de Estadística (INE)**: Se ha utilizado como la fuente primaria de autoridad para la extracción de todas las variables socioeconómicas y demográficas estructurales del estudio.
-    - *Fiabilidad y Validez*: Al ser el organismo oficial encargado de los servicios estadísticos del Estado, garantiza la máxima robustez y consistencia metodológica. Esto asegura que los datos entre diferentes Comunidades Autónomas (CCAA) son perfectamente comparables y no sufren de sesgos de recolección dispares.
+  - *Fiabilidad y Validez*: Al ser el organismo oficial encargado de los servicios estadísticos del Estado, garantiza la máxima robustez y consistencia metodológica. Esto asegura que los datos entre diferentes Comunidades Autónomas (CCAA) son perfectamente comparables y no sufren de sesgos de recolección dispares.
 - **AQUICN y Sensor Community**: Son dos plataformas Open Source que recogen datos medioambientales de miles y miles de sensores alrededor del mundo tanto de instituciones y empresas como aficionados que día tras día suben información pertinente a la meteorología y la calidad del aire. Se han empleado como fuentes complementarias para construir la dimensión ambiental, dado que el INE no proporciona series históricas de calidad del aire con la misma facilidad de acceso.
-    - *Fiabilidad y Validez*: AQICN garantiza la fiabilidad de los datos al agregar mediciones de estaciones oficiales calibradas bajo normativa internacional. Sensor Community, aunque utiliza sensores de bajo coste con menor precisión individual, su agregación masiva permite cubrir vacíos de la red oficial y validar tendencias locales filtrando el ruido instrumental.
+  - *Fiabilidad y Validez*: AQICN garantiza la fiabilidad de los datos al agregar mediciones de estaciones oficiales calibradas bajo normativa internacional. Sensor Community, aunque utiliza sensores de bajo coste con menor precisión individual, su agregación masiva permite cubrir vacíos de la red oficial y validar tendencias locales filtrando el ruido instrumental.
 
 ### Inferencias realizadas:
 
@@ -254,13 +261,9 @@ El proceso ETL de los datos de contaminación (61 archivos CSV distribuidos en 1
 El flujo de la transformación consta de 5 etapas:
 
 - **Formatting**: Estandarizamos la estructura de los CSVs, movemos columnas, ponemos un separador común, etc. Trabaja sobre los archivos con los datos de los sensores. (*formateador.py*)
-
 - **Aggregation**: Agregamos todos nuestros archivos CSV en uno solo llamado *super.csv*, localizado en *./temp/pollution/*, cambiando el formato de la fecha y añadiendo las columnas de region y sensor. Esto lo hacemos con tal de reducir las ineficiencias que conllevaría tener que estar tratando con una gran cantidad de distintos archivos constantemente en los futuros pasos. Trabaja sobre los archivos previamente formateados. (Bash y AWK)
-
 - **Compute Ratios**: Calculamos las medias de las proporciones entre los contaminantes y pm25 para cada sensor individualmente, además de la media nacional. Los resultados se escriben en un archivo CSV llamado *ratios.csv* localizado en *./temp/pollution*. Trabaja sobre el archivo previamente agregado. (*ratios.py*)
-
 - **Inferencia**: Eliminamos las entradas inválidas e inferimos la información que necesitemos y no tengamos. Primero inferimos los valores nulos de la columna pm25 y después los del resto de contaminantes. Trabaja sobre el archivo previamente agregado y los ratios previamente calculados. (*inferencia.py*)
-
 - **Factorización**: Desnormaliza la información previamente agregada y con las inferencias necesarias ya realizadas para que quede con las columnas Year, CCAA, Type y Value. El nombre y tipo de valores de datos de estas columnas sigue una convención que hemos definido para poder realizar posteriormente la agregación final de todos los datos (contaminación y otros). Para conseguir realizar este paso se calculan las medias de cada tipo de valor para cada combinación de comunidad autónoma y año.
 
 ### Pentaho Data Integration
@@ -274,26 +277,26 @@ Estas columnas deben tener **exactamente** el nombre indicado y sus valores tien
 
 - *Year*: Contiene el año en formato YYYY como valor. Ej. 2025.
 - *CCAA*: Contiene una de las siguientes Comunidades Autónomas como valor:
-    - total_nacional
-    - andalucia
-    - aragon
-    - asturias
-    - baleares
-    - canarias
-    - cantabria
-    - castilla_leon
-    - castilla_la_mancha
-    - catalunya
-    - ceuta
-    - comunidad_valenciana
-    - extremadura
-    - galicia
-    - la_rioja
-    - madrid
-    - melilla
-    - murcia
-    - navarra
-    - pais_vasco
+  - total_nacional
+  - andalucia
+  - aragon
+  - asturias
+  - baleares
+  - canarias
+  - cantabria
+  - castilla_leon
+  - castilla_la_mancha
+  - catalunya
+  - ceuta
+  - comunidad_valenciana
+  - extremadura
+  - galicia
+  - la_rioja
+  - madrid
+  - melilla
+  - murcia
+  - navarra
+  - pais_vasco
 
 Los datos pueden tener opcionalmente la columna *Type* para definir distintos tipos de valores. Simplemente se desnormalizará si existe.
 
@@ -324,14 +327,14 @@ graph LR;
 Reemplazaremos ciertos caracteres con otros:
 
 | Reemplazar | Remplazo |
-|:-----:|:--:|
-| à o á | a |
-| è o é | e |
-| ì o í | i |
-| ò o ó | o |
-| ù o ú | u |
-| ñ | ny |
-| '&nbsp;' | _ |
+| :--------: | :------: |
+|  à o á  |    a    |
+|  è o é  |    e    |
+|  ì o í  |    i    |
+|  ò o ó  |    o    |
+|  ù o ú  |    u    |
+|     ñ     |    ny    |
+|  '&nbsp;'  |    _    |
 
 ##### Other
 
@@ -364,9 +367,9 @@ Definimos los siguientes prefijos:
 
 - **Estructural:** `schema` (Schema.org) es el vocabulario base. Define qué es una observación, un conjunto de datos o un lugar.
 - **Científico (OBO Foundry):**
-    - `lfid`: Usado para clasificar métricas que afectan a la calidad de vida.
-    - `ecto`: Usado para describir condiciones ambientales (Ozono).
-    - `chebi` / `envo`: Describen compuestos químicos y entornos naturales con precisión científica.
+  - `lfid`: Usado para clasificar métricas que afectan a la calidad de vida.
+  - `ecto`: Usado para describir condiciones ambientales (Ozono).
+  - `chebi` / `envo`: Describen compuestos químicos y entornos naturales con precisión científica.
 - **Conexión Externa:** Usamos `owl` y `wikidata` para enriquecer nuestros datos con fuentes externas.
 - **Identidad Propia:** `ex` es nuestro espacio de nombres personalizado para crear identificadores únicos dentro de nuestro proyecto.
 
@@ -376,11 +379,13 @@ La información en el grafo se organiza conectando tres elementos principales:
 
 **1. El Lugar (`schema:Place`)**
 Representa a cada Comunidad Autónoma.
+
 - **Conexión:** Incluimos enlaces (`owl:sameAs` y `schema:sameAs`) a **Wikidata** para que los datos puedan cruzarse con información externa.
 - **Jerarquía:** Indicamos explícitamente que cada región está contenida dentro de España.
 
 **2. Los Conjuntos de Datos (`schema:Dataset`)**
 Creamos agrupaciones lógicas para facilitar la búsqueda de información:
+
 - **Por Año:** Un grupo que contiene todas las mediciones de un año específico (`Dataset/Year_{YYYY}`).
 - **Por Región:** Un grupo que contiene todo el historial de datos de una región específica (`Dataset/Region_{CCAA}`).
 
@@ -388,15 +393,15 @@ Creamos agrupaciones lógicas para facilitar la búsqueda de información:
 Es la pieza central. Representa el dato individual. Hemos unificado tanto los datos socioeconómicos como los de contaminación bajo este mismo modelo.
 
 - **Propiedades Básicas:**
-    - `schema:value`: El número o valor del dato.
-    - `schema:variableMeasured`: El nombre de lo que se mide.
-    - `schema:unitText`: La unidad de lo que se mide.
-    - `schema:observationDate`: El año al que pertenece el dato.
+  - `schema:value`: El número o valor del dato.
+  - `schema:variableMeasured`: El nombre de lo que se mide.
+  - `schema:unitText`: La unidad de lo que se mide.
+  - `schema:observationDate`: El año al que pertenece el dato.
 - **Relaciones:**
-    - Se conecta al **Lugar** correspondiente (`schema:areaServed`).
-    - Se conecta a los **Conjuntos de Datos** (datasets) de año y región mediante la propiedad `schema:isPartOf`.
+  - Se conecta al **Lugar** correspondiente (`schema:areaServed`).
+  - Se conecta a los **Conjuntos de Datos** (datasets) de año y región mediante la propiedad `schema:isPartOf`.
 - **Clasificación Científica:**
-    - Además de ser una observación genérica, le añadimos etiquetas específicas (`additionalType`) dependiendo de si es un gas contaminante o un indicador económico, usando los vocabularios científicos mencionados arriba.
+  - Además de ser una observación genérica, le añadimos etiquetas específicas (`additionalType`) dependiendo de si es un gas contaminante o un indicador económico, usando los vocabularios científicos mencionados arriba.
 
 #### Pasos de Ejecución
 
@@ -464,3 +469,4 @@ Además de este mismo README.md se incluye una memoria del trabajo en la carpeta
 - 18/12/25 - Carlos
 - 14/12/25 - Stefano
 - 10/12/25 - Linxi
+- 20/12/25 - David
