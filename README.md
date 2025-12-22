@@ -1,9 +1,5 @@
 # Adquisición y Preparación de Datos
 
-<h2 align="center">VISUALIZACIÓN</h2>
-
-<p align="center">https://csalas-alarcon.github.io/Grupo3_ADP/</p>
-
 ## Índice
 
 - [Equipo](#equipo)
@@ -49,7 +45,7 @@ Las casillas **marcadas** con una *X* indican que ese miembro del equipo le ha d
 |    4    |  (X)  |  (X)  |  (X)  |   (X)   |
 |    5    |  (X)  |  (X)  |  (X)  |   (X)   |
 |    6    |  (X)  |  (X)  |  (X)  |   (X)   |
-|    7    |  ( )  |  (X)  |  ( )  |   ( )   |
+|    7    |  (X)  |  (X)  |  (X)  |   (X)   |
 |    8    |  (X)  |  (X)  |  (X)  |   (X)   |
 
 ## Estructura del Repositorio
@@ -466,7 +462,7 @@ Además de este mismo README.md se incluye una memoria del trabajo en la carpeta
 
 ## Last Edited
 
+- 22/12/25 - Stefano
 - 18/12/25 - Carlos
-- 14/12/25 - Stefano
 - 10/12/25 - Linxi
 - 20/12/25 - David
