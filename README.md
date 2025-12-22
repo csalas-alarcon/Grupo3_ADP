@@ -49,7 +49,7 @@ Las casillas **marcadas** con una *X* indican que ese miembro del equipo le ha d
 |    4    |  (X)  |  (X)  |  (X)  |   (X)   |
 |    5    |  (X)  |  (X)  |  (X)  |   (X)   |
 |    6    |  (X)  |  (X)  |  (X)  |   (X)   |
-|    7    |  ( )  |  (X)  |  ( )  |   ( )   |
+|    7    |  (X)  |  (X)  |  (X)  |   (X)   |
 |    8    |  (X)  |  (X)  |  (X)  |   (X)   |
 
 ## Estructura del Repositorio
@@ -130,8 +130,8 @@ Las casillas **marcadas** con una *X* indican que ese miembro del equipo le ha d
   - *Poblaciones*: Cantidad de habitantes -> No es una métrica clave pero es bastante relevante y también se puede medir su impacto.
 - **Preguntas**:
   - ¿Cómo influye la economía de una CCAA en la calidad de vida de sus habitantes?
-  - ¿Cómo influyen el turismo y la contaminación de una CCAA en la calidad de vida de sus habitantes?
-  - ¿Influye más la economía de la CCAA o su turismo y contaminación en la calidad de vida de sus habitantes?
+  - ¿Cómo influye la contaminación de una CCAA en la calidad de vida de sus habitantes?
+  - ¿Influye más la economía de la CCAA o su contaminación en la calidad de vida de sus habitantes?
 
 ## Obtención de Datos Relevantes
 
